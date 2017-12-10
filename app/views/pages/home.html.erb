@@ -1,59 +1,7 @@
-<style>
-	h1 {
-		font-size: 50px;
-		text-align: center;
-		font-weight: bold;
-	}
-
-	.jumbotron {
-		background: lightgreen;
-		height: 40px;
-		text-align: center;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		height: 50px;
-	}
-
-	.jumbotron h2 {
-		padding-top: 10px;
-	}
-
-	.content p {
-		display: inline-block;
-		width: 40%;
-		margin: 5px 3% 5px 3%;
-	}
-
-	img {
-		margin-left: 25%;
-		width: 50%;
-		margin-bottom: 20px;
-	}
-
-</style>
-
-<h1>This is the home page</h1>
-
-<div class="jumbotron">
-	<h2>This is the home section of the website</h2>
+<div class="center jumbotron">
+  <h1>Alpha Blog</h1>
+  
+  <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+  <%= link_to 'Sign up', "#", class: "btn btn-danger btn-lg btn-xlarge" %> 
 </div>
 
-<%= image_tag 'luis_suarez.jpg' %>
-
-<div class="content">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-</div>
-
-<%= link_to 'Alpha-Blog', articles_path %> | <%= link_to 'About', about_path %> 
