@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
 
-resources :articles   #this line gives all the index, create, show, new, edit, destroy, update routes for article(type rails routes)
+	resources :articles   #this line gives all the index, create, show, new, edit, destroy, update routes for article(type rails routes)
+
+	get 'signup', to: 'users#new'
+	# post 'users', to: 'users#create'        this is one way to do it, next line shows another 
+	resources :users, except: [:new]
 
 end
