@@ -10,4 +10,8 @@ Rails.application.routes.draw do
 	# post 'users', to: 'users#create'        this is one way to do it, next line shows another 
 	resources :users, except: [:new]
 
+	get 'login', to: 'sessions#new'
+	post 'login', to: "sessions#create"
+	delete 'logout', to: 'sessions#destroy'
+
 end
